@@ -14,6 +14,8 @@ use Smile\ElasticsuiteCore\Model\Autocomplete\Terms\DataProvider as TermDataProv
  * Catalog product autocomplete data provider.
  *
  */
+#[\AllowDynamicProperties]
+
 class DataProvider implements DataProviderInterface
 {
     /**

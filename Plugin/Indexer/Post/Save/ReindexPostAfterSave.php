@@ -6,6 +6,8 @@ use Comwrap\ElasticsuiteBlog\Model\Post\Indexer\Fulltext;
 use Magefan\Blog\Model\Post;
 
 
+#[\AllowDynamicProperties]
+
 class ReindexPostAfterSave
 {
     /**

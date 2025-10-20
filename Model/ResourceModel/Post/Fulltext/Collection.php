@@ -4,6 +4,8 @@ namespace Comwrap\ElasticsuiteBlog\Model\ResourceModel\Post\Fulltext;
 use Smile\ElasticsuiteCore\Search\RequestInterface;
 use Smile\ElasticsuiteCore\Search\Request\BucketInterface;
 
+#[\AllowDynamicProperties]
+
 class Collection extends \Magefan\Blog\Model\ResourceModel\Post\Collection
 {
     /**
@@ -125,9 +127,9 @@ class Collection extends \Magefan\Blog\Model\ResourceModel\Post\Collection
      *
      * @return int
      */
-    public function getStoreId()
+    public function getStoreId(): int
     {
-        return $this->storeId;
+        return (int) $this->storeId;
     }
 
     /**

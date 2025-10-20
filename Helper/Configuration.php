@@ -5,6 +5,8 @@ namespace Comwrap\ElasticsuiteBlog\Helper;
 use Smile\ElasticsuiteCore\Helper\AbstractConfiguration;
 
 
+#[\AllowDynamicProperties]
+
 class Configuration extends AbstractConfiguration
 {
     /**

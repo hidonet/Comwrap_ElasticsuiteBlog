@@ -7,6 +7,8 @@ use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Store\Model\StoreManagerInterface;
 use Smile\ElasticsuiteCore\Model\ResourceModel\Indexer\AbstractIndexer;
 
+#[\AllowDynamicProperties]
+
 class Full extends AbstractIndexer
 {
     /**

@@ -6,6 +6,8 @@ use \Magento\Framework\Setup\ModuleContextInterface;
 use \Magento\Framework\Setup\SchemaSetupInterface;
 use \Magento\Eav\Setup\EavSetup;
 
+#[\AllowDynamicProperties]
+
 class InstallSchema implements InstallSchemaInterface
 {
     /**

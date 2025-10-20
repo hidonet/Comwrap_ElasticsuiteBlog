@@ -7,6 +7,8 @@ use Magento\Search\Model\QueryFactory;
 use Comwrap\ElasticsuiteBlog\Model\ResourceModel\Post\Fulltext\CollectionFactory as PostCollectionFactory;
 use Comwrap\ElasticsuiteBlog\Helper\Configuration;
 
+#[\AllowDynamicProperties]
+
 class Suggest extends \Magento\Framework\View\Element\Template
 {
     /**
@@ -134,6 +136,7 @@ class Suggest extends \Magento\Framework\View\Element\Template
     private function initPostCollection($collectionFactory)
     {
         $postCollection = $collectionFactory->create();
+        $postCollection->setStoreId($this->_storeManager->getStore()->getId());
         $postCollection->addFieldToFilter('is_active', 1);
         
         $postCollection->setPageSize($this->getNumberOfResults());

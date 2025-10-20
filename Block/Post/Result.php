@@ -7,6 +7,8 @@ use Magento\Framework\View\Element\Template\Context as TemplateContext;
 use Magento\Search\Model\QueryFactory;
 use Comwrap\ElasticsuiteBlog\Model\ResourceModel\Post\Fulltext\CollectionFactory as PostCollectionFactory;
 
+#[\AllowDynamicProperties]
+
 class Result extends \Magento\Framework\View\Element\Template
 {
     /**

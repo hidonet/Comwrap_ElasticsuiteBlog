@@ -8,6 +8,8 @@ use Comwrap\ElasticsuiteBlog\Model\Post\Indexer\Fulltext\Action\Full;
 use Magento\Framework\Indexer\ActionInterface;
 use Magento\Framework\Mview\ActionInterface as MviewActionInterface;
 
+#[\AllowDynamicProperties]
+
 class Fulltext implements ActionInterface, MviewActionInterface
 {
     /**

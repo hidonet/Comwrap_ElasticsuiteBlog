@@ -3,6 +3,8 @@
 namespace Comwrap\ElasticsuiteBlog\Controller\Result;
 
 
+#[\AllowDynamicProperties]
+
 class Index extends \Magento\Framework\App\Action\Action
 {
     /**

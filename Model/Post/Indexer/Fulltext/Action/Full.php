@@ -4,6 +4,8 @@ namespace Comwrap\ElasticsuiteBlog\Model\Post\Indexer\Fulltext\Action;
 use Comwrap\ElasticsuiteBlog\Model\ResourceModel\Post\Indexer\Fulltext\Action\Full as ResourceModel;
 use Magento\Cms\Model\Template\FilterProvider;
 
+#[\AllowDynamicProperties]
+
 class Full
 {
     /**
